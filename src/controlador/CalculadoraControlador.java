@@ -16,6 +16,7 @@ public class CalculadoraControlador {
     private CalculadoraVista theView;
     private CalculadoraModelo theModel;
 
+    // Recoge la vista y el modelo para después esperar eventos
     public CalculadoraControlador(CalculadoraVista theView, CalculadoraModelo theModel) {
         this.theView = theView;
         this.theModel = theModel;
@@ -27,6 +28,7 @@ public class CalculadoraControlador {
         this.theView.addCalculateListener(new CalculateListener());
     }
 
+    // Controla evento click
     public class CalculateListener implements ActionListener {
 
         @Override
